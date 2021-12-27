@@ -35,8 +35,7 @@ function Sidebar() {
             </button>
             <div className="text-[#d9d9d9] flex items-center justify-center 
             mt-auto hoverAnimation xl:ml-auto xl:-mr-5">
-                <img src="https://lh3.googleusercontent.com/ogw/
-                ADea4I6giwAmjnkX2ec4ZG8gAO1GZEIy6le1c9nEP9zqRA=s32-c-mo"
+                <img src="https://lh3.googleusercontent.com/ogw/ADea4I6giwAmjnkX2ec4ZG8gAO1GZEIy6le1c9nEP9zqRA=s32-c-mo"
                     alt=""
                     className="h-10 w-10 rounded-full xl:mr-2.5"
                 />
