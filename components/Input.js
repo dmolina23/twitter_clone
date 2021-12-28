@@ -1,7 +1,7 @@
 import { CalendarIcon, ChartBarIcon, EmojiHappyIcon, PhotographIcon, XIcon } from "@heroicons/react/outline"
 import { Picker } from "emoji-mart";
 import "emoji-mart/css/emoji-mart.css"
-import { addDoc, collection, serverTimestamp, updateDoc } from "firebase/firestore";
+import { addDoc, collection, doc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { useSession } from "next-auth/react";
 import { useRef, useState } from "react"
@@ -67,7 +67,7 @@ function Input() {
     }
 
     return (
-        <div className={`border-b border-gray-700 p-3 flex space-x-3 overflow-y-scroll ${loading && "opacity-60"}`}>
+        <div className={`border-b border-gray-700 p-3 flex space-x-3 overflow-y-scroll scrollbar-hide ${loading && "opacity-60"}`}>
             <img
                 src={session.user.image}
                 alt=""
